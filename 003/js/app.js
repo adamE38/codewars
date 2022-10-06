@@ -1,11 +1,7 @@
-// You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+// Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
-let midChar = word => {
-    if(word.length % 2 === 0){
-        return word[Math.round(word.length / 2 - 1)] + word[Math.round(word.length / 2)]
-    }else{
-        return word[Math.round(word.length / 2 - 1)]
-    }
-}
+// For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
-midChar('adam')
+let squareSum = numbers => numbers.map(n => n**2).reduce((acc, c) => acc + c, 0)
+
+console.log(squareSum([1, 2, 2]));

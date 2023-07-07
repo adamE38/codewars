@@ -16,3 +16,4 @@
 const betterThanAverage = (classPoints, yourPoints) => classPoints.reduce((acc, c) => acc + c, 0) / classPoints.length < yourPoints ? true : false
 
 // const betterThanAverage = (classPoints, yourPoints) => classPoints.reduce((acc, c) => acc + c, 0) / classPoints.length < yourPoints 
+// my solution was a little bit redundant

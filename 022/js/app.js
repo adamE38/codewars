@@ -20,7 +20,6 @@ function expressionMatter(a, b, c) {
     const comboD = a * b * c
     const comboE = a * (b + c)
     const comboF = (a + b) * c
-    const comboG = a * b + c
-    const results = [comboA, comboB, comboC, comboD, comboE, comboF, comboG]
+    const results = [comboA, comboB, comboC, comboD, comboE, comboF]
     return Math.max(...results)
 }
